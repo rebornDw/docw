@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Aug 30 17:03:57 CST 2018
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Docw1.0.9.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
