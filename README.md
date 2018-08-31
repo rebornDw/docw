@@ -34,6 +34,7 @@
 * String ftlPath="/createdoc";//word模板的路径
 * String path="D:/wordTest/";//本地保存的路径
 * boolean classInfo = cn.classInfo("com.bs.work.controller.ExcelController", path,ftlName,ftlPath);
+* ------------------------------------------
 * 功能五
 * 根据注解自动生成功能说明（根据实际情况选择用不用）
 * 在方法上面添加注解：
@@ -45,7 +46,7 @@
 
 * 在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
 
-* 邮件(625073235#qq.com)
+* 邮件(625073235@qq.com)
 * QQ: 625073235
 
 
