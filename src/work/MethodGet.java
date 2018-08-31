@@ -3,6 +3,8 @@ package work;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
+
+import ClassDemo.Fc;
 import ClassDemo.MethodDemo;
 
 public class MethodGet {
@@ -23,6 +25,15 @@ public class MethodGet {
 		Class<?>[] parameterTypes = method.getParameterTypes();
 		// 参数个数
 		int parameterCount = method.getParameterCount();
+		//获取方法上面的注解
+		String value="";
+	    Fc annotation = method.getAnnotation(Fc.class);
+	    if(annotation!=null){
+		     value = annotation.value();
+	    }
+	    if("".equals(value)){
+	    	value="//功能介绍";
+	    }
 		String type = "";
 		for (int i = 0; i < parameterTypes.length; i++) {
 			type = type + "," + parameterTypes[i].getName();
@@ -42,6 +53,8 @@ public class MethodGet {
 		returnType = returnType.replaceAll(">", "&gt;");
 		methodDemo.setReturnValue(returnType);
 		methodDemo.setType(type);
+		methodDemo.setFc(value);
+		
 		return methodDemo;
 
 	}

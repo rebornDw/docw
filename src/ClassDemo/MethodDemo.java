@@ -2,12 +2,19 @@ package ClassDemo;
 
 public class MethodDemo {
 
-	private String modify;
-	private String name;
-	private int returnCount;
-	private String type;
-	private String returnValue;
-	private String exInfo;
+	private String modify;         //修饰符
+	private String name;       //名字
+	private int returnCount;      //返回值个数
+	private String type;      //类型
+	private String returnValue;   //返回值
+	private String exInfo;  //异常欣喜
+	private String fc;      //功能说明
+	public String getFc() {
+		return fc;
+	}
+	public void setFc(String fc) {
+		this.fc = fc;
+	}
 	public String getModify() {
 		return modify;
 	}

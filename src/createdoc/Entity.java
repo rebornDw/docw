@@ -14,9 +14,13 @@ public class Entity {
 	private String returnValue;
 	
 	private String exInfo;
+	
+	private String fc;
+
+
 
 	public Entity(String modifier, String name, int returnCount,String returnValue, String exInfo
-			,String type) {
+			,String type,String fc) {
 		super();
          this.modifier=modifier;
          this.name=name;
@@ -24,8 +28,18 @@ public class Entity {
          this.returnValue=returnValue;
          this.exInfo=exInfo;
          this.type=type;
+         this.fc=fc;
 	}
 
+	
+	public String getFc() {
+		return fc;
+	}
+
+	public void setFc(String fc) {
+		this.fc = fc;
+	}
+	
 	public String getType() {
 		return type;
 	}
